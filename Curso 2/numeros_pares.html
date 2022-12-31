@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Calcular la tabla de multiplicar   </h1>
+
+
+    <script>
+
+          
+        function saltarlinea(){
+            var saltolinea = "<br> <br> <br>";
+            document.write(saltolinea);
+        }
+        function imprimir(frase){
+            document.write(frase);
+            saltarlinea();
+        }
+
+       
+        var contador = 1;
+        var limite = parseInt(prompt("ingrese el limite de numeros pares: "))
+
+        while(contador <= limite){
+          if  (!(contador%2)){
+            imprimir("numero par: " + contador)
+         }
+         
+
+
+            var contador = contador + 1
+        }
+
+        imprimir("final :D!")
+
+    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Prdiccion del año del mundial de la fifa   </h1>
+
+
+    <script>
+
+          
+        function saltarlinea(){
+            var saltolinea = "<br> <br> <br>";
+            document.write(saltolinea);
+        }
+        function imprimir(frase){
+            document.write(frase);
+            saltarlinea();
+        }
+
+        var añoMundial = 1930;
+        var limite = parseInt(prompt("ingrese el año limite para calcular: "));
+
+        while (añoMundial <= limite){
+            imprimir("hubo un mundial en el año " + añoMundial);
+            añoMundial +4;
+
+        }
+
+        imprimir("fin");
+
+
+
+    </script>
+</body>
+</html>

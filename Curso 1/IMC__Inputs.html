@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+   
+
+        function saltarlinea(){
+            var saltolinea = "<br> <br> <br>"
+            document.write(saltolinea)
+        }
+        function imprimir(frase){
+            document.write(frase);
+            saltarlinea();
+        }
+        function calcularImc(Peso,altura){
+            imc = Peso / (altura * altura);
+            return (imc);
+        }
+
+        var nombre = prompt("informe su nombre: ");
+        var peso = prompt(nombre + " informe su peso: ");
+        var altura = prompt(nombre + " informe su altura");
+        var imcT=  peso / (altura * altura);
+            
+
+        imprimir( nombre, "su indice de imc calculado es: "  + imcT );
+
+
+
+        
+
+
+    </script>
+    
+
+    
+</body>
+</html>

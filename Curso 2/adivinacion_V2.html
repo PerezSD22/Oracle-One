@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+        function saltarlinea(){
+            var saltolinea = "<br> <br> <br>"
+            document.write(saltolinea)
+        }
+        function imprimir(frase){
+            document.write(frase);
+            saltarlinea();
+        }
+
+        var numeroPensado = Math.round(Math.random()*10)
+        var contador = 1;       
+        var numeroIntento = 3;
+
+        while (contador <= numeroIntento){
+            var numeroLanzado = parseInt (prompt("adivine un numero del 1 al 10: "))
+
+            if(numeroPensado == numeroLanzado){
+            alert("Felicidades! has acertado en el intento: " + contador + "el numero pensado era: " +numeroPensado)
+            break
+            }
+            else{
+                alert(":( Has fallado, GG ez: ")
+            }
+            contador ++;
+
+
+        }
+
+        
+        if (numeroPensado == numeroLanzado){
+           imprimir("Felicidades! has acertado en el intento: " + numeroIntento + "el numero pensado era: " +numeroPensado)
+        }
+        else{
+            imprimir("Es una lastima :( intentalo de nuevo! el numero pensado era: " + numeroPensado)
+        }
+      
+
+    </script>
+</body>
+</html>

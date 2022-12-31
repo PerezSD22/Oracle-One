@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stii.css">
+</head>
+<body>
+    <h1>Tipo Email</h1>
+    <input type="email" id="email"> 
+    <button> Enviar email</button>
+    <hr class="separador">
+    <h1>Tipo busqueda</h1>
+    <input type="search" id="search">
+    <button> Buscar </button>
+    <hr class="separador">
+    <h1>Tipo Telefonico</h1>
+    <input type="tel" id="tel">
+    <button>Enviar telefono</button>
+    <hr class="separador">
+    <h1>Ripo URL</h1>
+    <input type="url" id="url">
+    <button>Enviar url</button>
+    <hr class="separador">
+    <h1> Tipo numerico sin decimal</h1>
+    <input type="number" name="age" id="age" min="1" max="10" step="2">
+    <button>Enviar edad</button>
+    <h1> tipo numerico con decimal</h1>
+    <input type="number" name="change" id="pennies" min="0" max="1" step="0.01">
+    <button>Enviar peso en gramos</button>
+    <hr class="separador">
+    <h1>Tipo slider</h1>
+    <label for="price">Choose a maximum house price: </label>
+    <input type="range" name="price" id="price" min="50000" max="500000" step="100" value="250000">
+    <output class="price-output" for="price"></output>
+    <hr class="separador">
+    <h1>Tipo fecha</h1>
+    <input type="date">
+    <hr class="separador">
+    <h1>Input default tipo texto</h1>
+    <input type="text">
+
+    <script>
+        const price = document.querySelector('#price')
+        const output = document.querySelector('.price-output')
+
+        output.textContent = price.value
+
+        price.addEventListener('input', function() {
+        output.textContent = price.value
+        });
+
+    </script>
+
+
+
+
+
+
+
+
+</body>
+</html>

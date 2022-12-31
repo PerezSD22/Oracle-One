@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="600" height="400"></canvas>
+
+    <script>
+
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+        pincel.fillStyle = "lightgray";
+        pincel.fillRect(0, 0, 600, 400);
+
+        function dibujarCirculo(x, y, radio, color) {
+
+            pincel.fillStyle = color;
+            pincel.beginPath();
+            pincel.arc(x, y, radio, 0, 2*3.14);
+            pincel.fill();
+        }
+        function dibujarflor(){
+            pincel.fillStyle = "#124516";
+            pincel.fillRect(160,160,15,300)
+            dibujarCirculo(190,190,30,"darkgreen")
+            dibujarCirculo(120,190,30,"darkgreen")
+            dibujarCirculo(200,110,30,"darkgreen")
+            dibujarCirculo(120,110,30,"darkgreen")
+            dibujarCirculo(160,160,40,"lightgreen")
+            
+            dibujarCirculo(80,160,50,"yellow")        
+            dibujarCirculo(240,160,50,"yellow")
+            dibujarCirculo(160,240,50,"yellow")
+            dibujarCirculo(160,80,50,"yellow")
+
+
+        }
+       
+        dibujarflor()
+        
+    
+        
+      
+
+
+
+
+    </script>
+    
+</body>
+</html>

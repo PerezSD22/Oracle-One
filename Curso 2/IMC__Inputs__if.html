@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> IMC Inteligente 
+    
+    </h1>
+
+
+    <script>
+
+   
+
+        function saltarlinea(){
+            var saltolinea = "<br> <br> <br>"
+            document.write(saltolinea)
+        }
+        function imprimir(frase){
+            document.write(frase);
+            saltarlinea();
+        }
+        function calcularImc(Peso,altura){
+            imc = Peso / (altura * altura);
+            return (imc);
+        }
+
+        var nombre =  prompt("informe su nombre: ");
+        var peso = parseFloat( prompt(nombre + " informe su peso: ") );
+        var altura = parseFloat( prompt(nombre + " informe su altura") );
+        var imcT=  peso / (altura * altura);
+            
+        imprimir( nombre + " su indice de imc calculado es: "  + imcT  );
+
+        if (imcT < 18.5){
+            
+
+            imprimir(" por lo tanto usted tiene insuficiencia ponderada" );
+
+        }
+
+    
+        if (imcT >= 18.5 ){
+
+            if ( imcT < 25) {
+                
+                imprimir(" por lo tanto usted esta en un rango normal" );
+                
+            }
+            
+        }
+
+        if (imcT >= 25 ){
+            if ( imcT < 30) {
+                
+                imprimir( " por lo tanto usted tiene sobre peso" );
+                
+            }
+
+
+        }
+        
+        if (imcT >= 30){
+            
+
+            imprimir(" por lo tanto usted tiene obesidad" );
+
+        }
+
+
+
+
+        
+
+
+    </script>
+    
+
+    
+</body>
+</html>

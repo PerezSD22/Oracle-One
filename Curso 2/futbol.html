@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>
+        Puntajes de un equipo de futbol
+    </h1>
+
+    <script>
+
+        
+        function saltarlinea(){
+            var saltolinea = "<br> <br> <br>";
+            document.write(saltolinea);
+        }
+        function imprimir(frase){
+            document.write(frase);
+            saltarlinea();
+        }
+
+        var victorias = parseInt(prompt("cuantas victorias consiguio el equipo: ") );
+        var empates = parseInt( prompt("cuantos empates consiguio el equipo: ") );
+
+        var puntosT = victorias * 3 + empates ;
+
+        imprimir ("los puntos del equipo son: " + puntosT)
+
+        if (puntosT > 28) {
+            
+            imprimir ("el equipo esta mejor que el año pasado")
+
+        } 
+        if (puntosT < 28) {
+            
+            imprimir ("el equipo esta peor que el año pasado" )
+
+        } 
+        if (puntosT == 28) {
+            
+            imprimir ("el equqipo esta igual que el año pasado")
+
+        } 
+
+
+
+
+
+ 
+
+
+
+    </script>
+    
+</body>
+</html>

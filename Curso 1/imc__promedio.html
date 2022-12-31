@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculo IMC</h1>
+
+
+    <script>
+
+   
+
+        function saltarlinea(){
+            var saltolinea = "<br> <br> <br>";
+            document.write(saltolinea);
+        }
+        function imprimir(frase){
+            document.write(frase);
+            saltarlinea();
+        }
+        function calcularImc(peso1, altura1,nombre1, peso2, altura2, nombre2){
+            imc1 = peso1 / (altura1 * altura1);
+            imc2 = peso2 / (altura2 * altura2);
+            imct = (imc1+imc2)/2
+            imprimir("el imc calculado de: " + nombre1 + " y " + nombre2 + " es: " +  imct );
+           
+        }
+
+       
+        calcularImc(78, 1.75, "Samuel",49, 1.54, "Anais"); 
+
+        
+
+
+
+    </script>
+
+
+</body>
+</html>
